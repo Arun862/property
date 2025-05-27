@@ -1,0 +1,114 @@
+<header class="header">
+  <div class="container-xl px-5 mx-auto" appClickOutside="closeDropdown()">
+    <div class="row">
+      <div class="navbar">
+        <div class="logo">
+         <a href="#"><img src="house.png" alt="" width="30px">
+          Allstate</a>
+          </div>
+        <ul class="links" >
+          <li routerLinkActive="active" routerLink="aboutus">About Us</li>
+          <li routerLinkActive="active" routerLink="projects">Projects</li>
+          <li routerLinkActive="active" routerLink="blogs">Blogs</li>
+          <li routerLinkActive="active" routerLink="services">Services</li>
+          <li>Listings</li>
+        </ul>
+        <div class="btns">
+          <button class="btn-primary" routerLinkActive="active" routerLink="contact">Contact Us</button>
+        </div>
+        <div class="toggle_btn" (click)="toggleDropdown()">
+          <input type="checkbox" id="check">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown" [class.open]="dropdownOpen" (click)="toggleDropdown()">
+        <li routerLinkActive="active" routerLink="aboutus">About Us</li>
+        <li routerLinkActive="active" routerLink="projects">Projects</li>
+        <li routerLinkActive="active" routerLink="blogs">Blogs</li>
+        <li>Services</li>
+        <li>Listings</li>
+        <div class="btns">
+          <button class="btn-primary" routerLinkActive="active" routerLink="contact">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<router-outlet />
+
+<footer class="footer">
+  <div class="container-xl px-5 mx-auto">
+      <div class="footer-container">
+          <div class="company-info">
+            <div class="logo">
+              <img src="house.png" alt="" width="30px">
+              Allstate</div>
+              <p class="caption">The primary intention of wearing <br>eyewear can very based on the need <br>or desire of the wearea.</p>
+          </div>
+          <div class="footer-links">
+            <div class="child-1">
+              <div class="head">
+                  <h3 class="mb-7">HOME</h3>
+              </div>
+              <div class="links">
+                  <ul class="no-bullets">
+                      <li class="footer-item">Service</li>
+                      <li class="footer-item">Resource</li>
+                      <li class="footer-item">Agents</li>
+                      <li class="footer-item">Lintings</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="child-1">
+              <div class="head">
+                  <h3 class="mb-7">COMPANY</h3>
+              </div>
+              <div class="links">
+                  <ul class="no-bullets">
+                      <li class="footer-item">About us</li>
+                      <li class="footer-item">Community</li>
+                      <li class="footer-item">Reviews</li>
+                      <li class="footer-item">FAQ</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="child-1">
+              <div class="head">
+                  <h3 class="mb-7">RESOURCE</h3>
+              </div>
+              <div class="links">
+                <ul class="no-bullets">
+                    <li class="footer-item">Press info</li>
+                    <li class="footer-item">Customer</li>
+                    <li class="footer-item">Service</li>
+                    <li class="footer-item">Blog</li>
+                </ul>
+            </div>
+          </div>
+          <div class="child-1">
+            <div class="head">
+                <h3 class="mb-7">SOCIAL</h3>
+            </div>
+            <div class="links">
+              <ul class="no-bullets">
+                  <li class="footer-item">Instagram</li>
+                  <li class="footer-item">Facebook</li>
+                  <li class="footer-item">Twitter</li>
+                  <li class="footer-item">Linkdin</li>
+              </ul>
+          </div>
+        </div>
+          </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="terms">
+        <p>Priavcy policy</p>
+        <span>All right reserved 2025&#64;</span>
+        <p>Terms and conditions</p>
+      </div>
+
+  </div>
+</footer>

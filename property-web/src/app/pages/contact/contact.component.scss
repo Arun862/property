@@ -1,0 +1,172 @@
+.tp-info{
+    margin: 70px 0px;
+    .title{
+        text-align: center;
+        .head{
+            font-size: 30px;
+            color: #000;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .caption{
+            font-size: 16px;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.form{
+    margin: 70px 0px;
+    .content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        .form-content{
+            width: 30%;
+            .info{
+                .title{
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 500;
+                    margin-bottom: 15px;
+                }
+                .input{
+                    width: 100%;
+                    font-size: 16px;
+                    color: #0249B2;
+                    padding: 10px 4px;
+                    margin-bottom: 15px;
+                    border: 1px solid #333;
+                    padding: 10px 10px;
+                }
+            }
+            .text-area{
+                margin-bottom: 40px;
+                .title{
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                .text-control{
+                    width: 100%;
+                    height: 120px;
+                    font-size: 16px;
+                    color: #0249B2;
+                    border: 1px solid #333;
+                    padding: 10px 10px;
+                }
+            }
+            .btn-primary{
+                border: 1px solid #ccc;
+                border-radius: 30px;
+                padding: 15px 25px;
+                transition: all .3s ease;
+                cursor: pointer;
+            }
+            .btn-primary:hover{
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+.suscribe{
+    margin: 70px 0px;
+    .content-bg{
+        .cover{
+            position: relative;
+            .img{
+                height: 700px;
+                object-fit: cover;
+                border-radius: 30px;
+            }
+            .cover-text{
+            position: absolute;
+              top: 50%;
+              left: 22%;
+              transform: translate(-50%, -50%);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+                .text{
+                    width: 60%;
+                    .mid-head{
+                        font-size: 60px;
+                        color: #000;
+                        font-weight: 700;
+                        line-height: 1.1;
+                    }
+                    .caption{
+                        font-size: 18px;
+                        color: #000;
+                        margin-top: 27px;
+                        font-weight: 600;
+                    }
+                    .button{
+                        margin-top: 30px;
+                        background-color: #fff;
+                        padding: 10px 10px 10px 25px;
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .email{
+                            outline: none;
+                            width: 70%;
+                        }
+                        .btn{
+                            padding: 15px 45px;
+                            background-color: #000;
+                            color: #fff;
+                            outline: none;
+                            border: none;
+                            border-radius: 40px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            transition: all .3s ease;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+
+@media only screen and (max-width: 640px), (max-width: 992px) {
+    
+    .form-content{
+        flex: 1;
+    }
+    .input{
+        width: 100% !important;
+        padding: 10px 0px !important;
+    }
+    .responsive-map{
+       width: 100%;
+    }
+    .map{
+        width: 100%;
+    }
+}
+
+
+   @media only screen and (max-width: 768px), (max-width: 960px), (max-width: 1400px) {
+    .cover-text{
+      left: -10% !important;
+      transform: translate(-5%, -50%) !important;
+    }
+    .button{
+        width: 130% !important;
+    }
+  }
